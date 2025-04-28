@@ -1,0 +1,101 @@
+*{
+   margin: 0;
+}
+body{
+    margin: 0;
+    width: 100%;
+}
+
+.imagenlado{
+    
+    display: flex;
+    width: 500px;
+    align-items: flex-end;
+}
+.imagenlado img{
+    width: 100%;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    background-color: #00754a5b;
+    height: 700px;
+    color: white;
+    padding-bottom: 5rem;
+
+}
+.texto h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.texto button{
+    border: none;
+    width: 350px;
+    height: 50px;
+}
+
+.razas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 0;
+    height: 800px;
+
+}
+
+.general{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 8rem;
+    padding-left: 40rem;
+    padding-right: 9rem;
+    width: 600px;
+}
+
+.cuadrados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    
+    
+}
+
+.cuadrado{
+    width: 330px;
+    height: 200px;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.cuadrado img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.cuadrado .info{
+    background-color: white;
+    padding-left: 1rem;
+
+}
+
+.boton6{
+    border:#00754a solid 1px;
+    font-size: 16px;
+    height: 50px;
+    width: 170px;
+    background-color: white;
+}
+
+.boton6 a{
+    color: #00754a;
+}

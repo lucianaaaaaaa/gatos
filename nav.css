@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+}
+
+.header {
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+}
+
+body{
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.barra{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 1.5rem;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.logo img{
+  height: 60px; 
+  width: 60px;
+  border-radius: 100%;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 10rem;
+  padding-left: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: black;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+a:hover {
+  color: #00754a;
+}
+
+.desplegable{
+  position: relative;
+} 
+
+.opciones{
+  display: none;
+  position: absolute;
+  background-color:white;
+  width: 180px;
+  border: 1px solid #E0E0E0;
+}
+.opciones li{
+  padding: 0.5rem;
+}
+.desplegable:hover .opciones {
+  display: block;
+}
+
+.derecha{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 4rem;
+}
+.derecha a{
+  text-transform: none;
+  font-weight: 600;
+}
+
+button{
+  border-radius: 2rem;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-weight: 550;
+
+}
+.boton1{
+  background-color: black;
+}
+
+.boton1 a{
+  color: white;
+  background-color: black;
+  
+}
+.boton2{
+  background-color: white;
+}
+
+.boton2 a{
+  background-color: white;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.nav-hamburguesa {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 97vw;
+  /* padding-top: 2rem; */
+  /* border: #00754a 1px solid; */
+}
+.nav-hamburguesa ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* border: #00754a 1px solid; */
+}
+.nav-hamburguesa button {
+  width: 85vw;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+footer {
+  width: 100%;
+  background-color: #0c3e2c;
+  font-family: sans-serif;
+  font-size: 14px;
+  height: auto;
+}
+
+.contenedor{
+  display: flex;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  justify-content: flex-start;
+  gap: 5rem;
+}
+
+.contenedor img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+.contenedor2{
+  display: flex;
+  justify-content: center;
+}
+.nosotrosf{
+  color: rgb(218, 218, 218);
+  padding: 2rem;
+}
+
+table{
+  display: flex;
+  justify-content: space-between;
+  gap: 15rem;
+  width: 100%;
+}
+
+table tr{
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+}
+
+
+
+@media (max-width: 1024px) {
+  .nav{
+    display: none;
+  }
+  .menu-icon {
+    display: flex;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav + .nav-hamburguesa {
+    display: flex;
+  }
+  .barra{
+    padding-left: 0;
+  }
+}
