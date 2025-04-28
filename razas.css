@@ -10,7 +10,9 @@ body{
 }
 
 .imagenlado{
-
+    
+    position: fixed ;
+    z-index: -1;
     display: flex;
     width: 500px;
     height: 100%;
@@ -19,7 +21,6 @@ body{
 .imagenlado img{
     width: 500px;
     height: 100%;
-    position: fixed absolute;
 }
 
 .texto{

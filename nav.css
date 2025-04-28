@@ -168,6 +168,9 @@ footer {
   font-family: sans-serif;
   font-size: 14px;
   height: auto;
+  
+  z-index: 1000;
+  bottom: 0;
 }
 
 .contenedor{
