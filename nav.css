@@ -145,7 +145,7 @@ button{
   position: absolute;
   top: 80px;
   left: 0;
-  width: 97vw;
+  width: 100vw;
   /* padding-top: 2rem; */
   /* border: #00754a 1px solid; */
 }
@@ -207,6 +207,7 @@ table tr{
   justify-content: space-between;
   gap: 5rem;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 

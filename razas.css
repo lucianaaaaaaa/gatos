@@ -10,8 +10,6 @@ body{
 }
 
 .imagenlado{
-    
-    position: fixed ;
     z-index: -1;
     display: flex;
     width: 500px;
@@ -51,21 +49,20 @@ body{
 .razas{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     right: 0;
-    height: 1000px;
+    flex-wrap: wrap;
 
 }
 
 .general{
     display: flex;
-    position: absolute;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 8rem;
-    padding-left: 40rem;
-    padding-right: 9rem;
-    width: 600px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 50vw;
 }
 .general p{
     padding: 1.5rem;
@@ -76,7 +73,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     gap: 1.5rem;
-    
     
 }
 
@@ -114,3 +110,10 @@ body{
 .boton6 a{
     color: #00754a;
 }
+
+@media (max-width: 1024px) {
+    .cuadrados{
+        flex-wrap: wrap;
+    }
+  
+    }

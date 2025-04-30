@@ -41,6 +41,7 @@ h1{
     text-align: center;
     font-size: 28px;
     font-family: sans-serif;
+    padding-bottom: 2rem;
 }
 
 .transparente h1{
@@ -59,15 +60,16 @@ h1{
 .formas_recompensa{
     display: flex;
     flex-direction: row;
-    padding-left: 13rem;
-    padding-right: 13rem;
     gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .recompensas{
     display: flex;
     align-items: center;
     gap: 2rem;
+    width: 450px;
 }
 
 .recompensas img{
@@ -123,9 +125,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 13rem;
     gap: 2rem;
-    width: 1100px;
+    width: 100%;
 }
 
 .cuadrado{
@@ -216,3 +217,13 @@ h1{
     padding: 0;
   }
   
+  @media (max-width: 1024px) {
+  .recompensas{
+    width: auto;
+}
+    .formas_recompensa{
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+
+  }
